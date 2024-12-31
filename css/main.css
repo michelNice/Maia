@@ -975,3 +975,23 @@ header{height:60vh;}
 :root {--heading: 1.75rem;}
 
 }
+
+
+
+
+.float{
+	position:fixed;
+	width:3.75rem;
+	height:3.75rem;
+	bottom:2.5rem;
+	right:2.5rem;
+	background-color:#25d366;
+	color:var(--color-tertiary);
+	border-radius:3.125rem;
+	text-align:center;
+  font-size:1.875rem;
+	box-shadow: 2px 2px 3px #999;
+  z-index:1;
+}
+
+.my-float{margin-top:1rem}
