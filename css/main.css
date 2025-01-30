@@ -30,10 +30,10 @@ li {list-style: none}
 
 
 header{
-background:linear-gradient(rgba(0, 0, 0, 0.574),rgba(0, 0, 0, 0.574)), url(../imgs/hero.avif);
-background-size: cover;
+background:linear-gradient(rgba(0, 0, 0, 0.574),rgba(0, 0, 0, 0.574)), url(../imgs/hero.jpg);
+background-size:cover;
 background-position: center;
-height:100vh;
+height:110vh;
 width: 100%;
 }
 
@@ -537,7 +537,7 @@ h2.padded-multi-line {
 }
 
 .padded-multi-line > span {
-  box-shadow: 0 .35em 0 0  #FF00FF, 0 .35em 0 0  #FF00FF;
+  box-shadow: 0 .35em 0 0   orange, 0 .35em 0 0  orange;
 
   
 }

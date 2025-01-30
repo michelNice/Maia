@@ -16,7 +16,7 @@ $(function() {
       $(".language-selected").removeClass("change-en change-es").addClass("change-br");
       
       // Update section text
-      $("#title").text("B-Girl Maia, cujo nome completo é Júlia Maia, é uma destacada breakdancer brasileira de Brasília. Ela começou sua jornada no breaking em 2010, inspirada por B-Girls locais em sua comunidade. Além do breaking, Maia tem uma rica experiência nas artes circenses, sendo filha de um mestre de circo e tendo mais de duas décadas de vivência na cultura circense e popular.");
+      $("#title").text("Bboy Fenster iniciou sua jornada no breaking em 2010 e, desde então, vem deixando sua marca na cena. Representando as crews Gang Gangrena e Flava Beat, ele se destacou com sua técnica refinada, musicalidade envolvente e um estilo autêntico que mistura fundamentos clássicos com criatividade inovadora. Ao longo de sua carreira, conquistou inúmeros campeonatos nacionais e segue construindo um legado sólido no breaking brasileiro. Nascido em Santa Cruz do Capibaribe, Pernambuco, Fenster se tornou um nome de respeito dentro da cultura hip-hop, influenciando novas gerações de b-boys e b-girls com sua paixão e dedicação à arte da dança.");
       $(".padded-multi-line").eq(0).find("span span").text("SOBRE MIM");
       $(".padded-multi-line").eq(1).find("span span").text("GALLERIA");
       $(".padded-multi-line").eq(2).find("span span").text("CONTATO");
@@ -44,7 +44,7 @@ $(function() {
       $(".language-selected").text("en-US");
       $(".language-selected").removeClass("change-br change-es").addClass("change-en");
       
-      $("#title").text("#title").text("B-Girl Maia, whose full name is Júlia Maia, is a prominent Brazilian breakdancer from Brasília. She began her breaking journey in 2010, inspired by local B-Girls in her community. Beyond breaking, Maia has a rich background in circus arts, being the daughter of a circus master and having over two decades of experience in circus and popular culture.");
+      $("#title").text("#title").text("Bboy Fenster began his breaking journey in 2010 and has since made a name for himself in the scene. Representing the crews Gang Gangrena and Flava Beat, he stands out for his refined technique, deep musicality, and an authentic style that blends classic foundations with innovative creativity. Throughout his career, he has won numerous national championships and continues to build a strong legacy in Brazilian breaking. Born in Santa Cruz do Capibaribe, Pernambuco, Fenster has earned great respect within hip-hop culture, inspiring new generations of b-boys and b-girls with his passion and dedication to the art of dance.");
       $(".padded-multi-line").eq(0).find("span span").text("ABOUT ME");
       $(".padded-multi-line").eq(1).find("span span").text("GALLERY");
       $(".padded-multi-line").eq(2).find("span span").text("CONTACT ME");
@@ -72,7 +72,7 @@ $(function() {
       $(".language-selected").text("es-ES");
       $(".language-selected").removeClass("change-en change-br").addClass("change-es");
       $(".text3").eq(0).text('SOBRE MÍ')
-      $("#title").text("B-Girl Maia, cuyo nombre completo es Júlia Maia, es una destacada breakdancer brasileña de Brasilia. Comenzó su camino en el breaking en 2010, inspirada por B-Girls locales en su comunidad. Más allá del breaking, Maia tiene una rica experiencia en las artes circenses, siendo hija de un maestro de circo y contando con más de dos décadas de experiencia en la cultura circense y popular.");
+      $("#title").text("Bboy Fenster comenzó su camino en el breaking en 2010 y desde entonces ha dejado su huella en la escena. Representando a las crews Gang Gangrena y Flava Beat, se destaca por su técnica refinada, su gran musicalidad y un estilo auténtico que combina bases clásicas con creatividad innovadora. A lo largo de su carrera, ha ganado numerosos campeonatos nacionales y sigue construyendo un legado sólido en el breaking brasileño. Nacido en Santa Cruz do Capibaribe, Pernambuco, Fenster se ha ganado el respeto dentro de la cultura hip-hop, inspirando a nuevas generaciones de b-boys y b-girls con su pasión y dedicación al arte de la danza.");
       $(".padded-multi-line").eq(0).find("span span").text("ACERCA DE MÍ");
       $(".padded-multi-line").eq(1).find("span span").text("GALERÍA");
       $(".padded-multi-line").eq(2).find("span span").text("CONTACTAME");
