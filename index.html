@@ -38,6 +38,23 @@
               </div>
           </div>
       </div>
+
+
+         <!-- Image Container with Play/Pause Button -->
+  <div class="image-container">
+    <div class="audio-button" id="audioButton">
+      <!-- Play Icon -->
+      <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M8 5v14l11-7z" />
+      </svg>
+      <!-- Pause Icon (Hidden Initially) -->
+      <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+        <path d="M6 19h4V5H6m8-14h4v18h-4z" />
+      </svg>
+    </div>
+    <audio id="audio" src="./imgs/Bob James - Nautilus (audio).mp3"></audio>
+  </div>
+
   </header>
     <main>
       <h2 class="padded-multi-line">
@@ -143,6 +160,10 @@
           </ul>
       </div>
     </footer>
+
+   
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/main.js"></script>

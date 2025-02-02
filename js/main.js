@@ -211,4 +211,24 @@ function validateEmailDomain(email) {
 
 
 
+const audioButton = document.getElementById('audioButton');
+const audio = document.getElementById('audio');
+const playIcon = document.getElementById('playIcon');
+const pauseIcon = document.getElementById('pauseIcon');
+
+// Toggle play/pause functionality
+audioButton.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    playIcon.style.display = 'none';
+    pauseIcon.style.display = 'block';
+  } else {
+    audio.pause();
+    playIcon.style.display = 'block';
+    pauseIcon.style.display = 'none';
+  }
+});
+
+
+
 

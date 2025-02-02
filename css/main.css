@@ -47,7 +47,7 @@ margin: 2rem;
 /***************************************/
 
 .header-container {
-max-width:15rem;
+max-width:10rem;
 margin: 0 auto;
 }
 
@@ -74,7 +74,7 @@ align-items: center;
 font-size: 1em;
 text-transform: uppercase;
 color:var(--white--);
-padding: 10px;
+padding:10px;
 }
 
 .nav-menu > a:hover {background:var(--black--);}
@@ -188,7 +188,7 @@ position: relative;
 
 .header {
 background-color: transparent;
-padding: 1.5rem 0;
+padding: 1.3rem 0;
 position: relative;
 z-index: 10;
 transition: background-color 0.3s ease;
@@ -1001,6 +1001,52 @@ header{height:60vh;}
 @media only screen and (max-width:31rem) {
 :root {--heading: 1.75rem;}
 
+}
+
+
+
+.image-container {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.image-container img {
+  width: 300px; 
+  border-radius: 8px;
+}
+
+.audio-button {
+  position: fixed; 
+  bottom: 20px; 
+  left: 20px; 
+  width: 40px; 
+  height: 40px;
+  background: linear-gradient(135deg, #4a90e2, #007aff);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 122, 255, 0.5); 
+  transition: transform 0.2s ease, background 0.3s ease;
+  z-index: 1000; 
+}
+
+.audio-button:hover {
+  transform: scale(1.1);
+}
+
+.audio-button svg {
+  fill:var(--white--);
+  width: 20px; 
+  height: 20px;
+  transition: opacity 0.2s ease;
+}
+
+.audio-button svg.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 
