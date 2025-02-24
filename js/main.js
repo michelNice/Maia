@@ -211,24 +211,66 @@ function validateEmailDomain(email) {
 
 
 
-const audioButton = document.getElementById('audioButton');
-const audio = document.getElementById('audio');
-const playIcon = document.getElementById('playIcon');
-const pauseIcon = document.getElementById('pauseIcon');
 
-// Toggle play/pause functionality
-audioButton.addEventListener('click', () => {
+
+
+const playlist = [
+  "./imgs/song1.mp3",
+  "./imgs/song2.mp3",
+  "./imgs/song3.mp3",
+  "./imgs/song4.mp3",
+  "./imgs/song5.mp3",
+  "./imgs/song6.mp3",
+  "./imgs/song7.mp3",
+  "./imgs/song8.mp3",
+  "./imgs/song10.mp3",
+  "./imgs/song11.mp3",
+  './imgs/song12.mp3'
+
+];
+
+let currentSongIndex = 0;
+const audio = document.getElementById("audio");
+const playButton = document.getElementById("audioButton");
+const playIcon = document.getElementById("playIcon");
+const pauseIcon = document.getElementById("pauseIcon");
+const rewindButton = document.getElementById("rewindButton");
+const forwardButton = document.getElementById("forwardButton");
+
+// Inicia a primeira música automaticamente
+audio.src = playlist[currentSongIndex];
+audio.play();
+
+// Quando a música termina, passa para a próxima
+audio.addEventListener("ended", () => {
+  currentSongIndex = (currentSongIndex + 1) % playlist.length;
+  audio.src = playlist[currentSongIndex];
+  audio.play();
+});
+
+// Play/Pause Button
+playButton.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
-    playIcon.style.display = 'none';
-    pauseIcon.style.display = 'block';
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "block";
   } else {
     audio.pause();
-    playIcon.style.display = 'block';
-    pauseIcon.style.display = 'none';
+    playIcon.style.display = "block";
+    pauseIcon.style.display = "none";
   }
 });
 
+// Botão de voltar para a música anterior
+rewindButton.addEventListener("click", () => {
+  currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length;
+  audio.src = playlist[currentSongIndex];
+  audio.play();
+});
 
-
-
+// Botão de avançar para a próxima música
+forwardButton.addEventListener("click", () => {
+  currentSongIndex = (currentSongIndex + 1) % playlist.length;
+  audio.src = playlist[currentSongIndex];
+  audio.play();
+});

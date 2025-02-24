@@ -1004,33 +1004,36 @@ header{height:60vh;}
 }
 
 
-
 .image-container {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   margin: 20px auto;
+  z-index: 1000;
 }
 
-.image-container img {
-  width: 300px; 
-  border-radius: 8px;
+.audio-controls {
+  display: flex;
+  gap:10px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
 }
 
 .audio-button {
-  position: fixed; 
-  bottom: 20px; 
-  left: 20px; 
-  width: 40px; 
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: linear-gradient(135deg, #4a90e2, #007aff);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 122, 255, 0.5); 
+  box-shadow: 0 4px 8px rgba(0, 122, 255, 0.5);
   transition: transform 0.2s ease, background 0.3s ease;
-  z-index: 1000; 
 }
 
 .audio-button:hover {
@@ -1038,15 +1041,7 @@ header{height:60vh;}
 }
 
 .audio-button svg {
-  fill:var(--white--);
-  width: 20px; 
-  height: 20px;
-  transition: opacity 0.2s ease;
+  fill: white;
+  width:17px;
+  height:17px;
 }
-
-.audio-button svg.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-

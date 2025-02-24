@@ -39,22 +39,36 @@
           </div>
       </div>
 
+      <div class="image-container">
+        <div class="audio-controls">
+          <!-- Rewind Button -->
+          <div class="audio-button" id="rewindButton">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M11 19V5l-9 7zm11 0V5l-9 7z" />
+            </svg>
+          </div>
+          
+          <!-- Play/Pause Button -->
+          <div class="audio-button" id="audioButton">
+            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+            <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+              <path d="M6 19h4V5H6m8-14h4v18h-4z" />
+            </svg>
+          </div>
+          
+          <!-- Fast Forward Button -->
+          <div class="audio-button" id="forwardButton">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M13 5v14l9-7zm-11 0v14l9-7z" />
+            </svg>
+          </div>
+        </div>
+        <audio id="audio" src="./imgs/Lupe Fiasco - Kick, Push (Official Video).mp3"></audio>
+      </div>
 
-         
-  <div class="image-container">
-    <div class="audio-button" id="audioButton">
-      <!-- Play Icon -->
-      <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M8 5v14l11-7z" />
-      </svg>
       
-      <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
-        <path d="M6 19h4V5H6m8-14h4v18h-4z" />
-      </svg>
-    </div>
-    <audio id="audio" src="./imgs/Lupe Fiasco - Kick, Push (Official Video).mp3"></audio>
-  </div>
-
   </header>
     <main>
       <h2 class="padded-multi-line">
