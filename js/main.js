@@ -215,17 +215,17 @@ function validateEmailDomain(email) {
 
 
 const playlist = [
-  "./imgs/song1.mp3",
-  "./imgs/song2.mp3",
-  "./imgs/song3.mp3",
-  "./imgs/song4.mp3",
-  "./imgs/song5.mp3",
-  "./imgs/song6.mp3",
-  "./imgs/song7.mp3",
-  "./imgs/song8.mp3",
-  "./imgs/song10.mp3",
-  "./imgs/song11.mp3",
-  './imgs/song12.mp3'
+  "./songs/song1.mp3",
+  "./songs/song2.mp3",       
+  "./songs/song3.mp3",
+  "./songs/song4.mp3",
+  "./songs/song5.mp3",
+  "./songs/song6.mp3",
+  "./songs/song7.mp3",
+  "./songs/song8.mp3",
+  "./songs/song10.mp3",
+  "./songs/song11.mp3",
+  './songs/song12.mp3'
 
 ];
 
@@ -244,7 +244,9 @@ audio.play();
 // Quando a música termina, passa para a próxima
 audio.addEventListener("ended", () => {
   currentSongIndex = (currentSongIndex + 1) % playlist.length;
+
   audio.src = playlist[currentSongIndex];
+
   audio.play();
 });
 
@@ -263,14 +265,20 @@ playButton.addEventListener("click", () => {
 
 // Botão de voltar para a música anterior
 rewindButton.addEventListener("click", () => {
+
   currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length;
+
   audio.src = playlist[currentSongIndex];
+
   audio.play();
 });
 
 // Botão de avançar para a próxima música
 forwardButton.addEventListener("click", () => {
+
   currentSongIndex = (currentSongIndex + 1) % playlist.length;
+
   audio.src = playlist[currentSongIndex];
+
   audio.play();
 });
