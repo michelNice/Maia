@@ -210,10 +210,6 @@ function validateEmailDomain(email) {
 }
 
 
-
-
-
-
 const playlist = [
   "./songs/song1.mp3",
   "./songs/song2.mp3",       
@@ -224,8 +220,9 @@ const playlist = [
   "./songs/song7.mp3",
   "./songs/song8.mp3",
   "./songs/song10.mp3",
+   './songs/song12.mp3',
   "./songs/song11.mp3",
-  './songs/song12.mp3'
+ 
 
 ];
 
@@ -238,10 +235,12 @@ const rewindButton = document.getElementById("rewindButton");
 const forwardButton = document.getElementById("forwardButton");
 
 // Inicia a primeira música automaticamente
+
 audio.src = playlist[currentSongIndex];
 audio.play();
 
 // Quando a música termina, passa para a próxima
+
 audio.addEventListener("ended", () => {
   currentSongIndex = (currentSongIndex + 1) % playlist.length;
 
@@ -251,6 +250,7 @@ audio.addEventListener("ended", () => {
 });
 
 // Play/Pause Button
+
 playButton.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
@@ -264,6 +264,7 @@ playButton.addEventListener("click", () => {
 });
 
 // Botão de voltar para a música anterior
+
 rewindButton.addEventListener("click", () => {
 
   currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length;
@@ -274,6 +275,7 @@ rewindButton.addEventListener("click", () => {
 });
 
 // Botão de avançar para a próxima música
+
 forwardButton.addEventListener("click", () => {
 
   currentSongIndex = (currentSongIndex + 1) % playlist.length;
